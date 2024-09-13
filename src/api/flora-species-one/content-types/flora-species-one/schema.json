@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flora_species",
+  "info": {
+    "singularName": "flora-species-one",
+    "pluralName": "flora-species",
+    "displayName": "flora-species"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "drug_name": {
+      "type": "string"
+    },
+    "sanskrit_name": {
+      "type": "string"
+    },
+    "latin_name": {
+      "type": "string"
+    },
+    "remarks": {
+      "type": "text"
+    },
+    "part_of_plant_used": {
+      "type": "string"
+    }
+  }
+}
