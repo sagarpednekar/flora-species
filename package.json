@@ -2,7 +2,7 @@
   "name": "flora-species-cms",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Pilot flower Database",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -23,7 +23,7 @@
     "styled-components": "5.3.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Sagar Pednekar"
   },
   "strapi": {
     "uuid": "a1163efe-3d9e-4454-8330-aedf50a164ca"
