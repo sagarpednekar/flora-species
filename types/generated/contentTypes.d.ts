@@ -383,7 +383,7 @@ export interface ApiFloraSpeciesOneFloraSpeciesOne
     book_name: Attribute.Enumeration<
       [
         'Charaka Samhita',
-        'Shushruta Samhita',
+        'Sushruta Samhita',
         'Ashtang Hridaya',
         'Ashtang Samgraha'
       ]
@@ -463,7 +463,7 @@ export interface ApiFloraSpeciesOneFloraSpeciesOne
       Attribute.DefaultTo<'Chapter 1'>;
     verse_number: Attribute.Integer;
     single_or_combination_drug: Attribute.Enumeration<
-      ['Single ', 'Combination']
+      ['Single ', 'Combination', 'Both', 'Other']
     > &
       Attribute.DefaultTo<'Single '>;
     formulation_as_a_single_drug: Attribute.String & Attribute.DefaultTo<'NA'>;
