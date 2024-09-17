@@ -379,6 +379,105 @@ export interface ApiFloraSpeciesOneFloraSpeciesOne
     latin_name: Attribute.String;
     remarks: Attribute.Text;
     part_of_plant_used: Attribute.String;
+    book_name: Attribute.Enumeration<
+      [
+        'Charaka Samhita',
+        'Sushruta Samhita',
+        'Ashtang Hridaya',
+        'Ashtang Samgraha'
+      ]
+    > &
+      Attribute.Required &
+      Attribute.DefaultTo<'Charaka Samhita'>;
+    Sthana: Attribute.Enumeration<
+      [
+        'Chikitsa Sthana',
+        'Indriya Sthana',
+        'Kalpa Sthana',
+        'Kalpa siddhi Sthana',
+        'Kalpana Sthana',
+        'Nidana Sthana',
+        'Sharir Sthana',
+        'Sidhi Sthana',
+        'Sutra Sthana',
+        'Uttar Tantra',
+        'Vimana Sthana'
+      ]
+    > &
+      Attribute.DefaultTo<'Chikitsa Sthana'>;
+    Chapter_number: Attribute.Enumeration<
+      [
+        'Chapter 1',
+        'Chapter 2',
+        'Chapter 3',
+        'Chapter 4',
+        'Chapter 5',
+        'Chapter 6',
+        'Chapter 7',
+        'Chapter 8',
+        'Chapter 9',
+        'Chapter 10',
+        'Chapter 11',
+        'Chapter 12',
+        'Chapter 13',
+        'Chapter 14',
+        'Chapter 15',
+        'Chapter 16',
+        'Chapter 17',
+        'Chapter 18',
+        'Chapter 19',
+        'Chapter 20',
+        'Chapter 21',
+        'Chapter 22',
+        'Chapter 23',
+        'Chapter 24',
+        'Chapter 25',
+        'Chapter 26',
+        'Chapter 27',
+        'Chapter 28',
+        'Chapter 29',
+        'Chapter 30',
+        'Chapter 31',
+        'Chapter 32',
+        'Chapter 33',
+        'Chapter 34',
+        'Chapter 35',
+        'Chapter 36',
+        'Chapter 37',
+        'Chapter 38',
+        'Chapter 39',
+        'Chapter 40',
+        'Chapter 41',
+        'Chapter 42',
+        'Chapter 43',
+        'Chapter 44',
+        'Chapter 45',
+        'Chapter 46',
+        'Chapter 47',
+        'Chapter 48',
+        'Chapter 49',
+        'Chapter 50'
+      ]
+    > &
+      Attribute.DefaultTo<'Chapter 1'>;
+    verse_number: Attribute.Integer;
+    single_or_combination_drug: Attribute.Enumeration<
+      ['Single ', 'Combination', 'Both', 'Other']
+    > &
+      Attribute.DefaultTo<'Single '>;
+    formulation_as_a_single_drug: Attribute.String & Attribute.DefaultTo<'NA'>;
+    formulation_as_combination: Attribute.String & Attribute.DefaultTo<'NA'>;
+    name_of_the_combination: Attribute.String & Attribute.DefaultTo<'NA'>;
+    user_ext_or_int: Attribute.Enumeration<['INT', 'EXT']> &
+      Attribute.DefaultTo<'INT'>;
+    type_of_ext_use: Attribute.String;
+    parenteral_route: Attribute.String;
+    uses_as_single_drug: Attribute.String & Attribute.DefaultTo<'NA'>;
+    uses_as_combination: Attribute.String & Attribute.DefaultTo<'NA'>;
+    anupana: Attribute.String;
+    granthadikara: Attribute.String;
+    rogadhikara: Attribute.String;
+    sahapana: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
