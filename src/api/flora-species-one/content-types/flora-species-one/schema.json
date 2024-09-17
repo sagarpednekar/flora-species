@@ -31,7 +31,7 @@
       "type": "enumeration",
       "enum": [
         "Charaka Samhita",
-        "Shushruta Samhita",
+        "Sushruta Samhita",
         "Ashtang Hridaya",
         "Ashtang Samgraha"
       ],
@@ -118,7 +118,9 @@
       "type": "enumeration",
       "enum": [
         "Single ",
-        "Combination"
+        "Combination",
+        "Both",
+        "Other"
       ],
       "default": "Single "
     },
